@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import TestSlots from './components/TestSlots.vue'
+// import { RouterLink, RouterView } from 'vue-router'
+// import TestSlots from './components/TestSlots.vue'
 import Carousel from './components/carousel/Carousel.vue'
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <div class="wrapper">
       <test-slots :msg="'Hello WORLD'">TEST SLOTS </test-slots>
       <nav>
@@ -16,13 +16,14 @@ import Carousel from './components/carousel/Carousel.vue'
   </header>
   <main>
     <div>
-      <carousel />
+
     </div>
   </main>
+
+  <RouterView /> -->
   <v-row class="d-flex align-center justify-center">
-    <v-col cols="12" sm="8" md="6"> CENTER</v-col>
+    <v-col cols="12" sm="8" md="6"> <carousel /></v-col>
   </v-row>
-  <RouterView />
 </template>
 
 <style scoped>

@@ -7,11 +7,9 @@ const props = defineProps({
 })
 </script>
 <template>
-  <div class="slide">
-    <a href=""
-      ><p>{{ props.numberSlide }}</p></a
-    >
-  </div>
+  <a href="" class="slide d-flex align-center justify-center">
+    <p>{{ props.numberSlide }}</p>
+  </a>
 </template>
 <style>
 .slide {
