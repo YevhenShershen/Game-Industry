@@ -1,21 +1,27 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import TestSlots from './components/TestSlots.vue'
+import Carousel from './components/carousel/Carousel.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-     <test-slots :msg="'Hello WORLD'">123git </test-slots>
+      <test-slots :msg="'Hello WORLD'">TEST SLOTS </test-slots>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
-
+  <main>
+    <div>
+      <carousel />
+    </div>
+  </main>
+  <v-row class="d-flex align-center justify-center">
+    <v-col cols="12" sm="8" md="6"> CENTER</v-col>
+  </v-row>
   <RouterView />
 </template>
 
