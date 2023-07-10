@@ -1,0 +1,1 @@
+<template><h1>Game News Component</h1></template>
